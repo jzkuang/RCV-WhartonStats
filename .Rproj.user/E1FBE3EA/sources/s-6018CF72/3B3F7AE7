@@ -1,0 +1,27 @@
+{
+    "id": "3B3F7AE7",
+    "path": "~/Research/Anderson/CleanBallots.R",
+    "project_path": "CleanBallots.R",
+    "type": "r_source",
+    "hash": "4180274147",
+    "contents": "",
+    "dirty": true,
+    "created": 1633798060933.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "6,57",
+        "scrollLine": "2"
+    },
+    "folds": "25|50|39|0|\n",
+    "lastKnownWriteTime": 1638898395,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638898395,
+    "read_only": false,
+    "read_only_alternatives": []
+}
