@@ -5,8 +5,8 @@ library("xlsx")
 #The relevant files
 # Where it takes it in from
 Path = "Ballots/Alameda (Oakland, San Leandro, Berkeley)/Alameda (Oakland, San Leandro, Berkeley) 2016/BerkeleyCouncilD2"
-  # Where it puts it out
-  output_path = "\\2016_Ballots.xlsx"
+# Where it puts it out
+output_path = "\\2016_Ballots.xlsx"
 
 #### Import the ballots ####
 Path_ballot = paste0(Path, "/ballot_image.txt")
