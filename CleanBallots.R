@@ -5,8 +5,8 @@ library("xlsx")
 #The relevant files
 # Where it takes it in from
 Path = "Ballots/Alameda (Oakland, San Leandro, Berkeley)/Alameda (Oakland, San Leandro, Berkeley) 2016/BerkeleyCouncilD2"
-# Where it puts it out
-output_path = "\\2016_Ballots.xlsx"
+  # Where it puts it out
+  output_path = "\\2016_Ballots.xlsx"
 
 #### Import the ballots ####
 Path_ballot = paste0(Path, "/ballot_image.txt")
@@ -23,7 +23,7 @@ cleaned_ballot <- clean_ballot(ballot = Ballots, b_header = T,
 # write_csv(cleaned_ballot, file = cleaned_output_path)
 # table(cleaned_ballot$vote_rank)
 
-#### This gets the rankings for each ballot  ####
+#### This gets the rankings for each ballot type  ####
 ballot_rankings <- cleaned_ballot %>% 
   mutate(candidate = replace_na(candidate, "Blank")) %>% 
   pivot_wider(id_cols = pref_voter_id,
