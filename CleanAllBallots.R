@@ -84,20 +84,19 @@ cleanAndPrint_pre2016 <- function(ballot_path, lookup_path, output_path, electio
   }
 }
 
-path = "Ballots/Alameda (Oakland, San Leandro, Berkeley)/Alameda (Oakland, San Leandro, Berkeley) 2014"
+path = "Ballots/Alameda (Oakland, San Leandro, Berkeley)/Alameda (Oakland, San Leandro, Berkeley) 2010"
 elections <- list.files(path) # For this to work the naming schema has to be the same
 elections <- sub("^master_lookup_*[\\ ]?", "", sub("^ballot_image_*[\\ ]?", "", elections))
 elections <- elections[duplicated(elections)]
 
-output_path = "Ranking_Frequency/2014_Alameda_Ballots.xlsx"
+output_path = "Ranking_Frequency/2010_Alameda_Ballots.xlsx"
 write.xlsx(data.frame(Empty = "", row.names = NULL), file = output_path, 
            sheetName= "blank")
-election <- elections[[2]]
+election <- elections[[3]]
 for (election in elections) {
   ballot_path = paste0(path, "/ballot_image_", election)
   lookup_path = paste0(path, "/master_lookup_", election)
   election <- gsub("Member, ", "", election)
   cleanAndPrint_pre2016(ballot_path, lookup_path, output_path, election)
 }
-
 
